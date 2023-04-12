@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ARRAY DECLARATION
+        //       TYPE 1
+        // var employeeNames = new Array(5);
+        // employeeNames[0] ="Ali";
+        // employeeNames[1] ="Saad";
+        // employeeNames[2] ="Zubair";
+        // employeeNames[3] ="Zohair";
+        // employeeNames[4] ="Aman";
+
+        // var myarray = new Array('Ali', 'Zaid' , 'Saad' ,'Ahmed');
+
+        // var myarray2 = ['Ali', 'Zubair' , 'Khizer' ,'Saad'];
+
+        // document.write(employeeNames[4] + "<br>" + employeeNames[3] + "<br>" + employeeNames[0] + "<br>" + myarray[3] + "<br>" + myarray2[3]);
+        
+        // for(var i = 0; i< employeeNames.length;  i++){
+        //     document.write(employeeNames[i] + "<br>");
+        // }
+
+        var marks = new Array(5);
+        marks[0] = new Array('Name','Eng','Urdu','Physics');
+        marks[1] = new Array('Fahad','65','59','95');
+        marks[2] = new Array('Sarim','56','98','45');
+        marks[3] = new Array('Saqib','64','56','54');
+        marks[4] = new Array('Ahmed','78','98','85');  
+        
+document.write( marks[0][0] + " "  + marks[0][1]+ " "  + marks[0][2]+ " "  + marks[0][3] + "<br>");
+document.write( marks[1][0] + " "  + marks[1][1]+ " "  + marks[1][2]+ " "  + marks[1][3] + "<br>");
+document.write( marks[2][0] + " "  + marks[2][1]+ " "  + marks[2][2]+ " "  + marks[3][3] + "<br>");
+document.write( marks[4][0] + " "  + marks[4][1]+ " "  + marks[4][2]+ " "  + marks[4][3] + "<br>");  
+
+         document.write("<h1>Printing Array Through Loop</h2>")
+
+document.write("<Table border=1>")
+
+            for(var i = 0; i < marks.length; i++){
+
+document.write("<tr>")
+
+                for(var j = 0; j < marks[i].length; j++){
+                   
+                    document.write("<td>" + marks[i][j] + "</td>");
+                }
+                document.write("</tr>")         
+                                   
+            }
+
+            document.write("</Table>")
+            
+    </script>
+</body>
+</html>
